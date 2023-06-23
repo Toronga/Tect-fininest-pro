@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family:  'Poppins', sans-serif;
+
+}
+ 
+ body{
+background-color:  #1f242d;
+color: #fff;
+
+} 
+html{
+  overflow-x: hidden;
+}
+.header{
+  justify-content: space-between;
+  z-index: 12;
+  width: 100%;
+  position: fixed;
+
+}
+
+.navbar{
+  height: 10vh;
+
+}
+
+.logo{
+color: rgb(69, 56, 32);
+font-size: 2rem;
+margin-left: 40px;
+}
+.nav-Links a:hover{
+  color: rgb(211, 166, 15);
+}
+a:hover {
+color: #fff;
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-link{
+font-size: 1rem;
+color: white;
+font-size: 20px;
+}
+.hamburger {
+width: 30px;
+height: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+cursor: pointer;
+}
+
+.hamburger span {
+width: 100%;
+height: 3px;
+background-color: black;
+border-radius: 10px;
+transition: all 0.3s ease-in-out
+}
+
+ul {
+display: none;
+position: absolute;
+top: 60px;
+left: 0;
+width: 100%;
+
+}
+
+ul li {
+text-align: center;
+padding: 10px 0;
+}
+
+ul li a {
+color:white;
+text-decoration: none;
+}
+
+.hamburger span:nth-child(1) {
+top: 0;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+top: 8px;
+}
+
+.hamburger span:nth-child(3) {
+width: 80%;
+}
+
+.menu{
+display: none;
+position: absolute;
+top: 50px;
+left: 0;
+z-index: 1;
+background-color: white;
+width: 100%;
+padding: 20px;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-Links li {
+margin-bottom: 10px;
+}
+
+.show-header .hamburger span:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+
+.show-header .hamburger span:nth-child(2) {
+opacity: 0;
+}
+
+.show-header .hamburger span:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+.show-header .nav-Links {
+display: block;
+}
+@media only screen and (min-width: 335px){
+  .billboard{
+    background-image: url(image/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
+    width: 200px;
+    height:20vh;
+    
+}
+
+.logo{
+  display: none;
+}
+
+
+
+}
+
+
+@media (min-width: 768px) {
+.hamburger {
+  display: none;
+}
+.logo{
+  display: block;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: transparent !important;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+}
+
+
+.billboard{
+    background-image: url(image/lauren-mancke-aOC7TSLb1o8-unsplash.jpg);
+    height: 100vh;
+    background-size: cover;
+    
+}
+
+
+.billboard{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+padding: 70px 10px 0;
+
+}
+
+.home-content{
+    max-width: 600px;
+margin-left: 30px;
+margin-bottom: 45px;
+}
+
+.home-content h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+ .home-content  h3 span{
+
+    color: rgb(215, 50, 50);
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+
+.home-content h3 span {
+    margin-bottom:30px ;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    margin-bottom: 20px;
+}
+#menu-icon{
+    font-size: 10rem;
+    color:white;
+}
+.btn{
+background-color: rgb(154, 141, 121);
+border-radius: 40px;
+box-shadow: 00 10px rgb(8, 8, 8);
+font-size: 16px;
+color:#1f242d;
+letter-spacing: 1px;
+text-decoration: none;
+font-weight: 600;
+padding: 15px;
+  
+}
+ .btn.hover{
+color: #Fff;
+}
+#aboutme{
+padding-top: 5%;
+}
+
+.aboutimage{
+    width: 100vw;
+    margin-top:120px ;
+}
+
+.aboutme{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.heading{
+    font-size: 3rem;
+}
+.about-content  h2{
+    text-align: left;
+    line-height: 2,6rem;
+}
+.about-content h3{
+
+    font-size: 2.1rem;
+    margin-bottom:45px ;
+}
+.about-content p{
+    margin-bottom:70px ;
+}
+
+.projects{
+    padding-top: 10%;
+    background: var(--second-bg-color);
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    gap: 2.5rem;
+
+}
+span{
+    color: rgb(241, 157, 11);
+}
+
+.heading2{
+    margin-bottom: 5rem;
+text-align: center;
+}
+ 
+
+.box{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    transition: .5s;   
+}
+
+
+.imgBox{
+
+        position: relative; 
+}
+.box .imgBox img{
+    transition: .5s;
+  }
+  .box:hover .imgBox img{
+    opacity: .5;
+    transform: translateY(-40px);
+  }
+
+  .content{
+    position: absolute;
+    bottom: -40;
+    left: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+  }
+  .box:hover .content{
+    bottom: 0;
+    opacity: 1;
+  }
+   .more{
+    color: #Fff
+  }
+
+  #languages{
+padding: 20%;
+  }
+  .tools{
+    padding: 80px;
+
+  }
+
+  .contact{
+    
+    background-image: url(image/daniele-d-andreti-j6k_QFUvPJE-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+  }
+  .contact-section{
+    padding-top: 20%;
+    padding-left: 20%;
+  }
+  .dee-container{
+    padding-bottom: 50%;
+    margin-right:100px;
+    list-style-type: none;
+  }
+  
+  
+
+
+.cont{
+  padding-top: 8%;
+  display: flex;
+  justify-items: center;
+}
+
+.tq{
+  justify-content: center;
+}
